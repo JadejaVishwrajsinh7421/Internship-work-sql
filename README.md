@@ -4,3 +4,6 @@ general tasks to understand the e-r diagram schema snd make the actual table rel
 
 15-Nov DAY-2
 getting information of how used insert and delete the dataset in database table , for this i used ms sql and also work how NULL is used.
+
+17-NOV DAY-3
+working on data retrival and sorting the entries and get know how the filtration is done in the outputm, for this work make a new schema of employess working in diffrent companies.. and last i general merge all the keywords that i used in tasks 3.
