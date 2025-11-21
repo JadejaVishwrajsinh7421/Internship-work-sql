@@ -48,9 +48,10 @@ INSERT INTO Orders VALUES
 (107, 7,  'Smartphone',   'Electronics', 15000, '2023-06-18', 'Delivered'),
 (108, 8,  'T-shirt',      'Fashion',       600, '2023-07-22', 'Delivered'),
 (109, 1,  'Power Bank',   'Electronics',  1800, '2023-08-03', 'Delivered'),
-(110, 3,  'Table Lamp',   'Home Decor',    800, '2023-08-22', 'Delivered'),
+(110, 3,  'Table Lamp',   'Home Decor',    800, '2023-08-22', 'Delivered');
 
 -- Invalid CustomerID to test RIGHT/FULL join
+INSERT INTO Orders VALUES
 (111, 15, 'Bed Sheet',    'Home Decor',   1200, '2023-09-10', 'Pending'),
 (112, 20, 'Headphones',   'Electronics',  2000, '2023-10-02', 'Delivered');
 
@@ -118,7 +119,7 @@ EmployeeNo VARCHAR(5),
 NAME VARCHAR(10),
 MANAGERNO VARCHAR(5))
 
-INSERT INTO EMPLOYEE_MASTER VALUES
+INSERT INTO EMPLOYEE_MANAGER VALUES
 ('E01','Tarun',NULL),
 ('E02','Rohan','E02'),
 ('E03','Priya','E01'),
@@ -128,8 +129,8 @@ INSERT INTO EMPLOYEE_MASTER VALUES
 
 -- -> Retrieve the names of employee along with their manager’s name from the Employee table.
 SELECT E.NAME AS EmployeeNAME,M.NAME AS MANAGERNAME
-FROM EMPLOYEE_MASTER E
-INNER JOIN EMPLOYEE_MASTER M
+FROM EMPLOYEE_MANAGER E
+INNER JOIN EMPLOYEE_MANAGER M
 ON E.MANAGERNO =  M.EmployeeNo
 
 
